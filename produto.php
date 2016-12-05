@@ -135,52 +135,51 @@ endif;
       <div class="product-tab w100 clearfix">
       
         <ul class="nav nav-tabs">
-          <li class="active"><a href="#details" data-toggle="tab">Details</a></li>
-          <li><a href="#size" data-toggle="tab">Size</a></li>
-          <li><a href="#shipping" data-toggle="tab">Shipping</a></li>
+          <li class="active"><a href="#details" data-toggle="tab">Detalhes</a></li>
+          <li><a href="#shipping" data-toggle="tab">Unidades Vendidas:</a></li>
         </ul>
         
         <!-- Tab panes -->
         <div class="tab-content">
           <div class="tab-pane active" id="details"><?=$pdt_content;?></div>
-          <div class="tab-pane" id="size"> 16" waist<br>
-            34" inseam<br>
-            10.5" front rise<br>
-            8.5" knee<br>
-            7.5" leg opening<br>
-            <br>
-            Measurements taken from size 30<br>
-            Model wears size 31. Model is 6'2 <br>
-            <br>
-          </div>
-          
           <div class="tab-pane" id="shipping">
-            <table >
+           <table >
               <colgroup>
-              <col style="width:33%">
-              <col style="width:33%">
-              <col style="width:33%">
+              <col style="width:45%">
+              <col style="width:15%">
+              <col style="width:40%">
               </colgroup>
               <tbody>
-                <tr>
-                  <td>Standard</td>
-                  <td>1-5 business days</td>
-                  <td>$7.95</td>
-                </tr>
-                <tr>
-                  <td>Two Day</td>
-                  <td>2 business days</td>
-                  <td>$15</td>
-                </tr>
-                <tr>
-                  <td>Next Day</td>
-                  <td>1 business day</td>
-                  <td>$30</td>
-                </tr>
+            <?php
+            //Delivered By Car, Brand or All
+               $Read->ExeRead(DB_ORDERS_ITEMS, "WHERE pdt_id=:pdt_id LIMIT 4", "pdt_id={$pdt_id}");
+               $orden_items=$Read->getResult();
+               if ($orden_items):
+                $Read->FullRead("select SUM(item_amount) as qtd_vendido from ".DB_ORDERS_ITEMS." WHERE pdt_id=:pdt_id","pdt_id={$pdt_id}");
+                $count=$Read->getResult();
+                 foreach ($orden_items as $orden_item):
+                    extract($orden_item);
+                    $Read->ExeRead(DB_ORDERS, "WHERE order_id=:order_id", "order_id={$order_id}");
+                    $orders_shippings=$Read->getResult();
+                    if($orders_shippings):
+                    foreach ($orders_shippings as $orders_shipping):
+                        extract($orders_shipping);
+                    ?>
+                    <tr>
+                    <td>Quantidade: <?=$count[0]["qtd_vendido"];?></td>
+                    <td>Dia:</td>
+                   <td><?=$order_date;?></td>
+                    </tr>
+                    <?php 
+                    endforeach; 
+                    endif;
+                endforeach;
+             endif;
+            ?>
               </tbody>
               <tfoot>
                 <tr>
-                  <td colspan="3">* Free on orders of $50 or more</td>
+                  <!-- <td colspan="3">* Free on orders of $50 or more</td> -->
                 </tr>
               </tfoot>
             </table>

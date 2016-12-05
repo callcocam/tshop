@@ -55,11 +55,23 @@
                         </li>
                     </ul>
                     <ul class="social">
-                        <li> <a href="http://facebook.com"> <i class=" fa fa-facebook"> &nbsp; </i> </a> </li>
-                        <li> <a href="http://twitter.com"> <i class="fa fa-twitter"> &nbsp; </i> </a> </li>
-                        <li> <a href="https://plus.google.com"> <i class="fa fa-google-plus"> &nbsp; </i> </a> </li>
-                        <li> <a href="http://youtube.com"> <i class="fa fa-pinterest"> &nbsp; </i> </a> </li>
-                        <li> <a href="http://youtube.com"> <i class="fa fa-youtube"> &nbsp; </i> </a> </li>
+                       <?php if (SITE_SOCIAL_FB):?>
+                         <li> <a target="_blank" href="https://www.facebook.com/<?=SITE_SOCIAL_FB_PAGE;?>" title="No Facebook"> <i class=" fa fa-facebook"> &nbsp; </i> </a> </li>
+                    <?php endif;
+
+                    if (SITE_SOCIAL_TWITTER):?>
+                     <li> <a target="_blank" href="https://www.twitter.com/<?=SITE_SOCIAL_TWITTER;?>" title="No Twitter"> <i class="fa fa-twitter"> &nbsp; </i> </a> </li>
+                   <?php endif;
+
+                    if (SITE_SOCIAL_GOOGLE):?>
+                    <li> <a target="_blank" href="https://plus.google.com/<?=SITE_SOCIAL_GOOGLE_PAGE;?>" title="No Google Plus"> <i class="fa fa-google-plus"> &nbsp; </i> </a> </li>
+                    <?php endif;
+                    if (SITE_SOCIAL_YOUTUBE):?>
+                        <li> <a target="_blank" href="https://www.youtube.com/user/<?=SITE_SOCIAL_YOUTUBE;?>" title="No YouTube"> <i class="fa fa-youtube"> &nbsp; </i> </a> </li>
+                    <?php endif; ?>
+                </ul>
+            </div>
+                       
                     </ul>
                 </div>
             </div>
