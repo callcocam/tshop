@@ -20,9 +20,8 @@ require_once 'modal.php';
                 </div>
                 <div class="col-lg-6 col-sm-6 col-xs-6 col-md-6 no-margin no-padding">
                     <div class="pull-right">
-                        <ul class="userMenu">
-                            <li> <a href="account-1.html"><span class="hidden-xs"> My Account</span> <i class="glyphicon glyphicon-user hide visible-xs "></i></a> </li><li> <a href="#"  data-toggle="modal" data-target="#ModalLogin"> <span class="hidden-xs">Sign In</span> <i class="glyphicon glyphicon-log-in hide visible-xs "></i> </a> </li>
-                            <li class="hidden-xs"> <a href="#"  data-toggle="modal" data-target="#ModalSignup"> Create Account </a> </li>
+                          <ul class="userMenu">
+                             <?php require '_cdn/widgets/account_tshop/account.bar.php'; ?> 
                         </ul>
                     </div>
                 </div>
@@ -134,10 +133,13 @@ require_once 'modal.php';
     </div>
     <!--/.container -->
 
-    <div class="search-full text-right"> <a class="pull-right search-close"> <i class=" fa fa-times-circle"> </i> </a>
+    <div class="search-full text-right">
+        <a class="pull-right search-close"> <i class=" fa fa-times-circle"> </i> </a>
         <div class="searchInputBox pull-right">
-            <input type="search"  data-searchurl="search?=" name="q" placeholder="start typing and hit enter to search" class="search-input">
+            <form class="search_form" name="search" action="" method="post" enctype="multipart/form-data">
+            <input data-searchurl="search?=" type="search" name="s" placeholder="Pesquisar Produtos:" required class="search-input">
             <button class="btn-nobg search-btn" type="submit"> <i class="fa fa-search"> </i> </button>
+            </form>
         </div>
     </div>
     <!--/.search-full-->

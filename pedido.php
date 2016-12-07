@@ -5,7 +5,7 @@ else:
     ?>
     <div class="container">
         <div class="content">
-            <?php require '_cdn/widgets/ecommerce/cart.php'; ?>
+            <?php require '_cdn/widgets/tshop/cart.php'; ?>
             <div class="clear"></div>
         </div>
     </div>

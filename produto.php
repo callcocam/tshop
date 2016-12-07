@@ -131,7 +131,7 @@ endif;
        <?php require '_cdn/widgets/tshop/cart.add.php'; ?>
       <!--/.cart-actions-->
       <div class="clear"></div>
-      
+      <hr>
       <div class="product-tab w100 clearfix">
       
         <ul class="nav nav-tabs">

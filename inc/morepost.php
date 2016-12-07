@@ -31,10 +31,10 @@
   <hr class="no-margin-top">
   <div class="width100 section-block ">
     <div class="row featureImg">
-      <div class="col-md-3 col-sm-3 col-xs-6"> <a href="category.html"><img src="images/site/new-collection-1.jpg" class="img-responsive" alt="img" ></a> </div>
-      <div class="col-md-3 col-sm-3 col-xs-6"> <a href="category.html"><img src="images/site/new-collection-2.jpg" class="img-responsive" alt="img" ></a> </div>
-      <div class="col-md-3 col-sm-3 col-xs-6"> <a href="category.html"><img src="images/site/new-collection-3.jpg" class="img-responsive" alt="img" ></a> </div>
-      <div class="col-md-3 col-sm-3 col-xs-6"> <a href="category.html"><img src="images/site/new-collection-4.jpg" class="img-responsive" alt="img"></a> </div>
+      <div class="col-md-3 col-sm-3 col-xs-6"> <a href="#"><img src="<?=INCLUDE_PATH;?>/images/site/new-collection-1.jpg" class="img-responsive" alt="img" ></a> </div>
+      <div class="col-md-3 col-sm-3 col-xs-6"> <a href="#"><img src="<?=INCLUDE_PATH;?>/images/site/new-collection-2.jpg" class="img-responsive" alt="img" ></a> </div>
+      <div class="col-md-3 col-sm-3 col-xs-6"> <a href="#"><img src="<?=INCLUDE_PATH;?>/images/site/new-collection-3.jpg" class="img-responsive" alt="img" ></a> </div>
+      <div class="col-md-3 col-sm-3 col-xs-6"> <a href="#"><img src="<?=INCLUDE_PATH;?>/images/site/new-collection-4.jpg" class="img-responsive" alt="img"></a> </div>
     </div>
     <!--/.row--> 
   </div>
@@ -45,22 +45,22 @@
     <div class="row">
       <div class="col-lg-12">
         <ul class="no-margin brand-carousel owl-carousel owl-theme">
-          <li><a ><img src="images/brand/1.gif" alt="img" ></a></li>
-          <li><img src="images/brand/2.png" alt="img" ></li>
-          <li><img src="images/brand/3.png" alt="img" ></li>
-          <li><img src="images/brand/4.png" alt="img" ></li>
-          <li><img src="images/brand/5.png" alt="img" ></li>
-          <li><img src="images/brand/6.png" alt="img" ></li>
-          <li><img src="images/brand/7.png" alt="img" ></li>
-          <li><img src="images/brand/8.png" alt="img" ></li>
-          <li><img src="images/brand/1.gif" alt="img" ></li>
-          <li><img src="images/brand/2.png" alt="img" ></li>
-          <li><img src="images/brand/3.png" alt="img" ></li>
-          <li><img src="images/brand/4.png" alt="img" ></li>
-          <li><img src="images/brand/5.png" alt="img" ></li>
-          <li><img src="images/brand/6.png" alt="img" ></li>
-          <li><img src="images/brand/7.png" alt="img" ></li>
-          <li><img src="images/brand/8.png" alt="img" ></li>
+          <li><a ><img src="<?=INCLUDE_PATH;?>/images/brand/1.gif" alt="img" ></a></li>
+          <li><img src="<?=INCLUDE_PATH;?>/images/brand/2.png" alt="img" ></li>
+          <li><img src="<?=INCLUDE_PATH;?>/images/brand/3.png" alt="img" ></li>
+          <li><img src="<?=INCLUDE_PATH;?>/images/brand/4.png" alt="img" ></li>
+          <li><img src="<?=INCLUDE_PATH;?>/images/brand/5.png" alt="img" ></li>
+          <li><img src="<?=INCLUDE_PATH;?>/images/brand/6.png" alt="img" ></li>
+          <li><img src="<?=INCLUDE_PATH;?>/images/brand/7.png" alt="img" ></li>
+          <li><img src="<?=INCLUDE_PATH;?>/images/brand/8.png" alt="img" ></li>
+          <li><img src="<?=INCLUDE_PATH;?>/images/brand/1.gif" alt="img" ></li>
+          <li><img src="<?=INCLUDE_PATH;?>/images/brand/2.png" alt="img" ></li>
+          <li><img src="<?=INCLUDE_PATH;?>/images/brand/3.png" alt="img" ></li>
+          <li><img src="<?=INCLUDE_PATH;?>/images/brand/4.png" alt="img" ></li>
+          <li><img src="<?=INCLUDE_PATH;?>/images/brand/5.png" alt="img" ></li>
+          <li><img src="<?=INCLUDE_PATH;?>/images/brand/6.png" alt="img" ></li>
+          <li><img src="<?=INCLUDE_PATH;?>/images/brand/7.png" alt="img" ></li>
+          <li><img src="<?=INCLUDE_PATH;?>/images/brand/8.png" alt="img" ></li>
         </ul>
       </div>
     </div>

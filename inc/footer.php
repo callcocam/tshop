@@ -1,4 +1,3 @@
-
 <footer>
     <div class="footer" id="footer">
         <div class="container">
@@ -16,32 +15,30 @@
                 <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
                     <h3> Shop </h3>
                     <ul>
-                        <li> <a href="index.html"> Home </a> </li>
-                        <li> <a href="category.html"> Category </a> </li>
-                        <li> <a href="sub-category.html"> Sub Category </a> </li>
-                        <li> <a href="product-details.html"> Product Details </a> </li>
-                        <li> <a href="product-details-style2.html"> Product Details Version 2 </a> </li>
+                        <li> <a href="<?=BASE;?>"> Home </a> </li>
+                        <li> <a href="<?=BASE;?>/duvidas-frequentes"> Duvidas </a> </li>
+                        <li> <a href="<?=BASE;?>/troca-de-mercadorias"> Trocas De Mercadorias </a> </li>
+                        <li> <a href="<?=BASE;?>/prazo-de-devolucao">Prazo De Devolução</a> </li>
+
                     </ul>
                 </div>
                 <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
                     <h3> Information </h3>
                     <ul>
-                        <li> <a href="cart.html"> Cart </a> </li>
-                        <li> <a href="about-us.html"> About us </a> </li>
-                        <li> <a href="about-us-2.html"> About us 2 </a> </li>
-                        <li> <a href="contact-us.html"> Contact us </a> </li>
-                        <li> <a href="contact-us-2.html"> Contact us 2 </a> </li>
-                        <li> <a href="terms-conditions.html"> Terms &amp; Conditions </a> </li>
+                        <li> <a href="<?=BASE;?>/sobre-nos"> Sobre </a> </li>
+                        <li> <a href="<?=BASE;?>/politica-de-privacidade"> Politica De Privacidade </a> </li>
+                        <li> <a href="<?=BASE;?>/termos-de-uso"> Termos De Uso </a> </li>
+                        <li> <a href="<?=BASE;?>/contate-nos"> Contato </a> </li>
                     </ul>
                 </div>
                 <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
                     <h3> My Account </h3>
                     <ul>
-                        <li> <a href="account-1.html"> Account Login </a> </li>
-                        <li> <a href="account.html"> My Account </a> </li>
-                        <li> <a href="my-address.html"> My Address </a> </li>
-                        <li> <a href="wishlist.html"> Wisth list </a> </li>
-                        <li> <a href="order-list.html"> Order list </a> </li>
+                         <li> <a href="<?=BASE;?>/conta/home#acc""> Minha Conta </a> </li>
+                        <li> <a href="<?=BASE;?>/conta/pedidos#acc">Meus Pedidos </a> </li>
+                        <li> <a href="<?=BASE;?>/conta/enderecos#acc"> Meus Endereços </a> </li>
+                        <li> <a href="<?=BASE;?>/conta/wishlists#acc"> Lista  </a> </li>
+
                     </ul>
                 </div>
                 <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
@@ -72,8 +69,7 @@
                 </ul>
             </div>
                        
-                    </ul>
-                </div>
+             </div>
             </div>
             <!--/.row-->
         </div>
@@ -84,7 +80,13 @@
     <div class="footer-bottom">
         <div class="container">
             <p class="pull-left"> &copy; TSHOP 2014. All right reserved. </p>
-            <div class="pull-right paymentMethodImg"> <img height="30" class="pull-right" src="images/site/payment/master_card.png" alt="img" > <img height="30" class="pull-right" src="images/site/payment/paypal.png" alt="img" > <img height="30" class="pull-right" src="images/site/payment/american_express_card.png" alt="img" > <img  height="30" class="pull-right" src="images/site/payment/discover_network_card.png" alt="img" > <img  height="30" class="pull-right" src="images/site/payment/google_wallet.png" alt="img" > </div>
+            <div class="pull-right paymentMethodImg">
+                <img height="30" class="pull-right" src="<?=INCLUDE_PATH;?>/images/site/payment/master_card.png" alt="img" >
+                <img height="30" class="pull-right" src="<?=INCLUDE_PATH;?>/images/site/payment/paypal.png" alt="img" >
+                <img height="30" class="pull-right" src="<?=INCLUDE_PATH;?>/images/site/payment/american_express_card.png" alt="img" >
+                <img  height="30" class="pull-right" src="<?=INCLUDE_PATH;?>/images/site/payment/discover_network_card.png" alt="img" >
+                <img  height="30" class="pull-right" src="<?=INCLUDE_PATH;?>/images/site/payment/google_wallet.png" alt="img" >
+            </div>
         </div>
     </div>
     <!--/.footer-bottom-->

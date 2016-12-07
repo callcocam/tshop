@@ -1,3 +1,16 @@
+<div class="container main-container headerOffset">
+    <!-- Main component call to action -->
+    <div class="row">
+        <div class="breadcrumbDiv col-lg-12">
+            <ul class="breadcrumb">
+                <li><a title="<?= SITE_NAME; ?>" href="<?= BASE; ?>"><?= SITE_NAME; ?></a> </li>
+                <li class="active"><?=urldecode($URL[1]);?> </li>
+            </ul>
+        </div>
+    </div>  <!-- /.row  -->
+    <div class="row">
+        <!--left column-->
+        <div class="col-lg-3 col-md-3 col-sm-12">
 <?php
 $Search = urldecode($URL[1]);
 $SearchPage = urlencode($Search);
@@ -44,3 +57,6 @@ endif;
         <div class="clear"></div>
     </section>
 </div>
+            </div>
+        </div>
+    </div>
